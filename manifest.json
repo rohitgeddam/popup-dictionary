@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "name": "Word Finder",
+    "version": "1",
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": ["content.js"]
+        }
+    ],
+    "permissions": [
+        "tabs"
+      ],
+    
+    "browser_action": {
+        "default_popup": "popup/popup.html",
+        "default_title": "Look Up a defination"
+    },
+    "background": {
+        "scripts": ["background.js"]
+    }
+   
+}
